@@ -54,86 +54,10 @@
         <h2 id="cars-heading">Featured Vehicles</h2>
         <p class="section-lead">Hand-picked JDM performance cars — inspected, prepared and ready for Uganda.</p>
 
-        <!-- VEHICLE INFORMATION: Replace cards below with real vehicle data -->
-        <div class="cards-grid" id="vehicles">
-          <!-- card template -->
-          <article class="car-card">
-            <div class="car-media">
-              <img src="https://source.unsplash.com/1200x800/?toyota%20supra" alt="Toyota Supra" loading="lazy">
-            </div>
-            <div class="car-body">
-              <h3 class="car-name">Toyota Supra</h3>
-              <ul class="car-meta">
-                <li>Year: 1998</li>
-                <li>Engine: 3.0L Turbo</li>
-                <li>Transmission: 6-speed</li>
-              </ul>
-              <p class="car-desc">A legendary JDM icon with balanced handling and potent straight-six performance.</p>
-              <div class="car-footer">
-                <span class="price">Contact for Price</span>
-                <a class="btn btn-sm btn-outline" href="#contact" data-scroll>Enquire Now</a>
-              </div>
-            </div>
-          </article>
-
-          <article class="car-card">
-            <div class="car-media">
-              <img src="https://source.unsplash.com/1200x800/?nissan%20skyline%20gtr" alt="Nissan Skyline GT-R" loading="lazy">
-            </div>
-            <div class="car-body">
-              <h3 class="car-name">Nissan Skyline GT-R</h3>
-              <ul class="car-meta">
-                <li>Year: 1999</li>
-                <li>Engine: 2.6L Twin-Turbo</li>
-                <li>Transmission: 6-speed</li>
-              </ul>
-              <p class="car-desc">An all-wheel-drive legend built for speed and track control.</p>
-              <div class="car-footer">
-                <span class="price">Contact for Price</span>
-                <a class="btn btn-sm btn-outline" href="#contact" data-scroll>View Details</a>
-              </div>
-            </div>
-          </article>
-
-          <article class="car-card">
-            <div class="car-media">
-              <img src="https://source.unsplash.com/1200x800/?mazda%20rx7" alt="Mazda RX-7" loading="lazy">
-            </div>
-            <div class="car-body">
-              <h3 class="car-name">Mazda RX-7</h3>
-              <ul class="car-meta">
-                <li>Year: 1995</li>
-                <li>Engine: 1.3L Rotary</li>
-                <li>Transmission: 5-speed</li>
-              </ul>
-              <p class="car-desc">Iconic lightweight chassis paired with a high-revving rotary engine.</p>
-              <div class="car-footer">
-                <span class="price">Contact for Price</span>
-                <a class="btn btn-sm btn-outline" href="#contact" data-scroll>Enquire Now</a>
-              </div>
-            </div>
-          </article>
-
-          <article class="car-card">
-            <div class="car-media">
-              <img src="https://source.unsplash.com/1200x800/?subaru%20wrx%20sti" alt="Subaru WRX STI" loading="lazy">
-            </div>
-            <div class="car-body">
-              <h3 class="car-name">Subaru WRX STI</h3>
-              <ul class="car-meta">
-                <li>Year: 2016</li>
-                <li>Engine: 2.0L Turbo</li>
-                <li>Transmission: 6-speed</li>
-              </ul>
-              <p class="car-desc">Rally-bred performance with sharp handling and AWD traction.</p>
-              <div class="car-footer">
-                <span class="price">Contact for Price</span>
-                <a class="btn btn-sm btn-outline" href="#contact" data-scroll>View Details</a>
-              </div>
-            </div>
-          </article>
-
-        </div>
+        <!-- VEHICLE INFORMATION: Cards are generated from folders inside /cars. -->
+        <p id="vehicle-status" class="section-lead" aria-live="polite">Loading available vehicles…</p>
+        <div class="cards-grid" id="vehicles"></div>
+        <div id="product-view" class="product-view" hidden></div>
       </div>
     </section>
 
@@ -222,15 +146,19 @@
           <p class="lead">Have a car in mind or need help sourcing? Get in touch and we’ll assist you.</p>
 
           <ul class="contact-list">
-            <li><strong>Phone:</strong> <!-- COMPANY PHONE --> +256 700 000000</li>
-            <li><strong>Email:</strong> <!-- COMPANY EMAIL --> <a href="mailto:">info@gmail.com</a></li>
-            <li><strong>Address:</strong> <!-- COMPANY ADDRESS --> Kampala, Uganda</li>
+            <li><strong>Phone:</strong> <!-- COMPANY PHONE --> <span data-company="phones">Loading…</span></li>
+            <li><strong>Email:</strong> <!-- COMPANY EMAIL --> <a data-company="email" href="mailto:unitedjapantraders@gmail.com">unitedjapantraders@gmail.com</a></li>
+            <li><strong>Address:</strong> <!-- COMPANY ADDRESS --> <span data-company="address">Loading…</span></li>
           </ul>
         </div>
 
-        <form id="contact-form" class="contact-form" novalidate>
+        <form id="contact-form" class="contact-form" novalidate data-enquiry-email="nehalagct@gmail.com" data-endpoint="">
           <!-- CONTACT FORM ENDPOINT / EMAIL SERVICE GOES HERE -->
+          <!-- Change data-enquiry-email only to control where form enquiries are sent. Footer email remains in company_info.txt. -->
           <!-- To connect a backend, configure the POST endpoint in the submit handler in js/script.js -->
+          <!-- Using Formsubmit: you will receive a verification email at the company email once a submission is made. Please open that email and confirm to start receiving messages. -->
+          <input type="hidden" name="_subject" value="Website Enquiry">
+          <input type="hidden" name="_template" value="table">
           <label for="name">Name <span aria-hidden="true">*</span></label>
           <input id="name" name="name" type="text" required>
 
@@ -245,6 +173,7 @@
 
           <button type="submit" class="btn btn-primary">Send Enquiry</button>
           <p class="form-note">We will reply via email or phone. This form requires a backend to send email — see comment above.</p>
+          <div id="form-status" class="form-status" role="status" aria-live="polite" aria-atomic="true" hidden></div>
         </form>
       </div>
     </section>
@@ -269,12 +198,12 @@
 
       <div class="footer-contact">
         <h4>Contact</h4>
-        <p><!-- COMPANY PHONE --> +256 700 000000</p>
-        <p><!-- COMPANY EMAIL --> <a href="mailto:">info@mail.com</a></p>
+        <p><!-- COMPANY PHONE --> <span data-company="phones">Loading…</span></p>
+        <p><!-- COMPANY EMAIL --> <a data-company="email" href="mailto:unitedjapantraders@gmail.com">unitedjapantraders@gmail.com</a></p>
       </div>
     </div>
     <div class="legal">
-      <div class="container">&copy; <span id="year"></span> <!-- COMPANY NAME --> JDM Performance Uganda. All rights reserved.</div>
+      <div class="container">&copy; <span id="year"></span> <!-- COMPANY NAME --> <span data-company="name">United Japan TRD LTD</span>. All rights reserved.</div>
     </div>
   </footer>
 

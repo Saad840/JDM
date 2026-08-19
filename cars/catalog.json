@@ -1,0 +1,20 @@
+[
+  {
+    "name": "Toyota Fielder",
+    "folder": "Toyota Fielder",
+    "mainImage": "Main_image.jpeg",
+    "descriptionFile": "description.txt"
+  },
+  {
+    "name": "Toyota Harrier",
+    "folder": "Toyota Harrier",
+    "mainImage": "WhatsApp Image 2026-08-18 at 8.57.42 PM.jpeg",
+    "descriptionFile": "description.txt"
+  },
+  {
+    "name": "Toyota Land cruiser Prado",
+    "folder": "Toyota Land cruiser Prado",
+    "mainImage": "WhatsApp Image 2026-08-18 at 8.56.23 PM.jpeg",
+    "descriptionFile": "description.txt"
+  }
+]
