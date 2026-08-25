@@ -1,0 +1,7 @@
+Name: Toyota Premio
+Model: 2011
+Color: White
+Drivetrain: 4WD
+Features:
+Push to start
+Electric mirrors

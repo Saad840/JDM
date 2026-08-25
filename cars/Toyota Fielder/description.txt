@@ -1,6 +1,7 @@
-Toyota Fielder
-2013 Model
-Black color
-WXB
+Name: Toyota Fielder
+Model: 2013
+Color: Black
+Variant: WXB
+Features:
 Sport lights
 Electric mirrors

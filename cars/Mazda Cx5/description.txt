@@ -1,0 +1,9 @@
+Name: Mazda CX-5
+Model: 2018
+Color: Gray
+Features:
+Push to start
+Power boot
+Electric brake
+Parking sensors
+Multimedia

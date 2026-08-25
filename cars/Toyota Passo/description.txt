@@ -1,0 +1,7 @@
+Name: Toyota Passo
+Model: 2013
+Color: White
+Features:
+Sofa seats
+Reverse camera
+Electric mirrors

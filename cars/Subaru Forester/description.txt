@@ -1,0 +1,9 @@
+Name: Subaru Forester
+Model: 2014
+Color: Silver
+Variant: X Break
+Features:
+Sports rims
+Push to start
+Electric mirrors
+Heated seats

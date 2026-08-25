@@ -1,0 +1,9 @@
+Name: Toyota Noah
+Model: 2017
+Color: White
+Features:
+Push to start
+Sports rims
+Auto door
+Electric mirrors
+Multimedia steering

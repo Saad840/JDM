@@ -3,20 +3,28 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>JDM Performance — Uganda</title>
-  <meta name="description" content="Premium JDM cars, imports, sourcing and services for Uganda. Japanese performance delivered to Uganda.">
-  <meta property="og:title" content="JDM Performance — Uganda">
-  <meta property="og:description" content="Premium JDM cars, imports, sourcing and services for Uganda.">
+  <title>United Japan TRD LTD — JDM Performance Vehicles Uganda</title>
+  <meta name="description" content="Premium JDM cars, direct Japanese imports, vehicle sourcing and inspection for Uganda. Hand-picked Toyota, Mazda, Subaru vehicles ready at Nakawa Bond.">
+  <meta property="og:title" content="United Japan TRD LTD — JDM Performance Uganda">
+  <meta property="og:description" content="Premium JDM cars, direct imports, and services for Uganda.">
   <meta property="og:type" content="website">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
   <header class="site-header" id="site-header">
     <div class="container header-inner">
-      <div class="logo" aria-hidden="false">
-        <!-- COMPANY LOGO GOES HERE -->
-        <a href="#home" class="logo-link" aria-label="Home">
-          <div class="logo-placeholder" role="img" aria-label="Company logo placeholder"></div>
+      <div class="logo">
+        <a href="#home" class="logo-link" aria-label="United Japan TRD Home">
+          <div class="brand-logo">
+            <span class="logo-badge">JDM</span>
+            <div class="logo-text">
+              <span class="logo-title">UNITED JAPAN</span>
+              <span class="logo-sub">TRD LTD • KAMPALA</span>
+            </div>
+          </div>
         </a>
       </div>
       <nav class="nav" id="primary-nav" aria-label="Primary">
@@ -25,7 +33,7 @@
         </button>
         <ul id="nav-list" class="nav-list">
           <li><a href="#home" data-scroll>Home</a></li>
-          <li><a href="#cars" data-scroll>Cars</a></li>
+          <li><a href="#cars" data-scroll>Vehicles</a></li>
           <li><a href="#services" data-scroll>Services</a></li>
           <li><a href="#about" data-scroll>Who We Are</a></li>
           <li><a href="#contact" data-scroll>Contact</a></li>
@@ -39,11 +47,17 @@
       <div class="hero-media" aria-hidden="true"></div>
       <div class="hero-overlay"></div>
       <div class="container hero-content">
-        <p class="eyebrow">JDM • Performance • Quality • Uganda</p>
-        <h1 class="hero-title">Japanese Performance. Delivered to Uganda.</h1>
-        <p class="hero-sub">We specialise in sourcing, importing and preparing premium JDM vehicles for drivers in Uganda. Precision, power and trust.</p>
+        <div class="hero-badge">
+          <span class="pulse-dot"></span>
+          <span>Direct Imports • Future Holding Bond Nakawa</span>
+        </div>
+        <h1 class="hero-title">Japanese Performance.<br><span class="highlight-text">Delivered to Uganda.</span></h1>
+        <p class="hero-sub">We specialise in sourcing, inspecting, and importing premium Japanese vehicles for Ugandan drivers. Quality checked, prepared, and ready for the road.</p>
         <div class="hero-ctas">
-          <a class="btn btn-primary" href="#cars" data-scroll>Explore Cars</a>
+          <a class="btn btn-primary" href="#cars" data-scroll>
+            <span>Explore Vehicles</span>
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+          </a>
           <a class="btn btn-ghost" href="#contact" data-scroll>Contact Us</a>
         </div>
       </div>
@@ -51,69 +65,128 @@
 
     <section id="cars" class="section cars-section" aria-labelledby="cars-heading">
       <div class="container">
-        <h2 id="cars-heading">Featured Vehicles</h2>
-        <p class="section-lead">Hand-picked JDM performance cars — inspected, prepared and ready for Uganda.</p>
+        <div class="section-header">
+          <div>
+            <span class="section-tag">JDM Showroom</span>
+            <h2 id="cars-heading">Available Vehicles</h2>
+            <p class="section-lead">Hand-picked Japanese vehicles — inspected, documented and ready in Uganda.</p>
+          </div>
+          <div id="vehicle-status" class="vehicle-count-badge" aria-live="polite">Loading stock…</div>
+        </div>
 
-        <!-- VEHICLE INFORMATION: Cards are generated from folders inside /cars. -->
-        <p id="vehicle-status" class="section-lead" aria-live="polite">Loading available vehicles…</p>
+        <!-- SEARCH AND FILTER TOOLBAR -->
+        <div class="catalog-toolbar" id="catalog-toolbar">
+          <div class="filter-pills" id="brand-filters" role="tablist" aria-label="Brand filters">
+            <button type="button" class="filter-pill active" data-brand="all" role="tab" aria-selected="true">All Vehicles <span class="pill-count" id="count-all">10</span></button>
+            <button type="button" class="filter-pill" data-brand="toyota" role="tab" aria-selected="false">Toyota <span class="pill-count" id="count-toyota">7</span></button>
+            <button type="button" class="filter-pill" data-brand="mazda" role="tab" aria-selected="false">Mazda <span class="pill-count" id="count-mazda">1</span></button>
+            <button type="button" class="filter-pill" data-brand="subaru" role="tab" aria-selected="false">Subaru <span class="pill-count" id="count-subaru">1</span></button>
+          </div>
+
+          <div class="toolbar-controls">
+            <div class="search-box">
+              <svg class="search-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+              <input type="search" id="car-search" placeholder="Search by name, year, color, or features..." aria-label="Search vehicles">
+              <button type="button" id="clear-search" class="clear-search-btn" aria-label="Clear search" hidden>&times;</button>
+            </div>
+
+            <div class="sort-box">
+              <label for="car-sort" class="sr-only">Sort vehicles</label>
+              <select id="car-sort" class="sort-select">
+                <option value="featured">Sort: Featured</option>
+                <option value="year-desc">Year: Newest First</option>
+                <option value="year-asc">Year: Oldest First</option>
+                <option value="name-asc">Name: A to Z</option>
+              </select>
+            </div>
+          </div>
+        </div>
+
+        <!-- VEHICLE CARDS GRID -->
         <div class="cards-grid" id="vehicles"></div>
+
+        <!-- EMPTY SEARCH STATE -->
+        <div id="no-results" class="no-results-state" hidden>
+          <div class="no-results-icon">🔍</div>
+          <h3>No matching vehicles found</h3>
+          <p>Try searching for a different model, year, or clear your filters.</p>
+          <button type="button" id="reset-filter-btn" class="btn btn-outline">Reset All Filters</button>
+        </div>
+
+        <!-- PRODUCT DETAIL VIEW -->
         <div id="product-view" class="product-view" hidden></div>
       </div>
     </section>
 
+    <!-- FULLSCREEN IMAGE LIGHTBOX MODAL -->
+    <div id="image-lightbox" class="image-lightbox" hidden aria-hidden="true" role="dialog" aria-label="Image Preview">
+      <div class="lightbox-backdrop"></div>
+      <div class="lightbox-content">
+        <button type="button" class="lightbox-close" id="lightbox-close" aria-label="Close image preview">&times;</button>
+        <button type="button" class="lightbox-nav lightbox-prev" id="lightbox-prev" aria-label="Previous photo">&#10094;</button>
+        <button type="button" class="lightbox-nav lightbox-next" id="lightbox-next" aria-label="Next photo">&#10095;</button>
+        <div class="lightbox-img-container">
+          <img id="lightbox-img" src="" alt="Enlarged vehicle preview">
+        </div>
+        <div class="lightbox-caption" id="lightbox-caption"></div>
+      </div>
+    </div>
+
     <section id="services" class="section services-section" aria-labelledby="services-heading">
       <div class="container">
-        <h2 id="services-heading">Our Services</h2>
-        <p class="section-lead">From sourcing to performance upgrades — full JDM support in Uganda.</p>
+        <div class="section-header text-center">
+          <span class="section-tag">What We Do</span>
+          <h2 id="services-heading">Our Services</h2>
+          <p class="section-lead">From sourcing to delivery — complete automotive import support in Uganda.</p>
+        </div>
 
         <div class="services-grid">
           <div class="service-card">
             <div class="service-icon" aria-hidden="true">
-              <!-- simple inline SVG -->
-              <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M3 13l2-2 4 4 8-8 4 4"/></svg>
+              <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="1" y="3" width="15" height="13"></rect><polygon points="16 8 20 8 23 11 23 16 16 16 16 8"></polygon><circle cx="5.5" cy="18.5" r="2.5"></circle><circle cx="18.5" cy="18.5" r="2.5"></circle></svg>
             </div>
-            <h3>JDM Car Import</h3>
-            <p>Sourcing and importing quality Japanese vehicles to Uganda with full handling of logistics.</p>
+            <h3>Direct JDM Car Import</h3>
+            <p>Direct sourcing and importation of authentic Japanese vehicles to Uganda with complete logistics, clearing, and forwarding.</p>
           </div>
 
           <div class="service-card">
             <div class="service-icon" aria-hidden="true">
-              <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 1 1-2.83 2.83l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 1 1-4 0v-.09a1.65 1.65 0 0 0-1-1.51 1.65 1.65 0 0 0-1.82.33l-.06.06A2 2 0 1 1 2.28 18.8l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 1 1 0-4h.09a1.65 1.65 0 0 0 1.51-1 1.65 1.65 0 0 0-.33-1.82l-.06-.06A2 2 0 1 1 6.2 2.28l.06.06a1.65 1.65 0 0 0 1.82.33H8a1.65 1.65 0 0 0 1-1.51V3a2 2 0 1 1 4 0v.09c0 .59.39 1.09 1 1.51h.92a1.65 1.65 0 0 0 1.82-.33l.06-.06A2 2 0 1 1 21.72 5.2l-.06.06a1.65 1.65 0 0 0-.33 1.82V8c.42.61.92 1 1.51 1H21a2 2 0 1 1 0 4h-.09c-.59 0-1.09.39-1.51 1z"/></svg>
+              <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
             </div>
-            <h3>Vehicle Sourcing</h3>
-            <p>We help you find specific JDM models with the exact specs you want.</p>
+            <h3>Custom Vehicle Sourcing</h3>
+            <p>Looking for a specific model, trim, or grade? We locate the exact Japanese specification vehicle tailored to your budget.</p>
           </div>
 
           <div class="service-card">
             <div class="service-icon" aria-hidden="true">
-              <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+              <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg>
             </div>
-            <h3>Car Inspection</h3>
-            <p>Comprehensive vehicle inspection and verification before purchase.</p>
+            <h3>Comprehensive Inspection</h3>
+            <p>Rigorous pre-purchase checks in Japan including mechanical condition, genuine mileage verification, and structural assessment.</p>
           </div>
 
           <div class="service-card">
             <div class="service-icon" aria-hidden="true">
-              <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20.39 8.56A5 5 0 0 0 12.43 3H12a5 5 0 0 0-5 5v1"/><path d="M12 12v9"/><path d="M7 6v6"/></svg>
+              <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon></svg>
             </div>
             <h3>Performance Upgrades</h3>
-            <p>Engine, suspension and tuning services to elevate performance.</p>
+            <p>Suspension, styling, rims, interior upgrades, and routine maintenance to prepare your vehicle for Ugandan roads.</p>
           </div>
 
           <div class="service-card">
             <div class="service-icon" aria-hidden="true">
-              <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/></svg>
+              <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"></circle><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 1 1-2.83 2.83l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 1 1-4 0v-.09a1.65 1.65 0 0 0-1-1.51 1.65 1.65 0 0 0-1.82.33l-.06.06A2 2 0 1 1 2.28 18.8l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 1 1 0-4h.09a1.65 1.65 0 0 0 1.51-1 1.65 1.65 0 0 0-.33-1.82l-.06-.06A2 2 0 1 1 6.2 2.28l.06.06a1.65 1.65 0 0 0 1.82.33H8a1.65 1.65 0 0 0 1-1.51V3a2 2 0 1 1 4 0v.09c0 .59.39 1.09 1 1.51h.92a1.65 1.65 0 0 0 1.82-.33l.06-.06A2 2 0 1 1 21.72 5.2l-.06.06a1.65 1.65 0 0 0-.33 1.82V8c.42.61.92 1 1.51 1H21a2 2 0 1 1 0 4h-.09c-.59 0-1.09.39-1.51 1z"></path></svg>
             </div>
-            <h3>Spare Parts</h3>
-            <p>Sourcing genuine and high-quality aftermarket JDM parts.</p>
+            <h3>Genuine Spare Parts</h3>
+            <p>Quick sourcing and delivery of authentic Japanese OEM and high-performance aftermarket parts.</p>
           </div>
 
           <div class="service-card">
             <div class="service-icon" aria-hidden="true">
-              <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><path d="M7 10l5-5 5 5"/></svg>
+              <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path></svg>
             </div>
-            <h3>Consultation</h3>
-            <p>Expert advice on choosing and preparing the right JDM vehicle.</p>
+            <h3>Expert Consultation</h3>
+            <p>Personalized advice on selecting the right JDM car for fuel efficiency, reliability, resale value, and Ugandan terrain.</p>
           </div>
         </div>
       </div>
@@ -122,18 +195,23 @@
     <section id="about" class="section about-section" aria-labelledby="about-heading">
       <div class="container about-inner">
         <div class="about-media">
-          <img src="https://images.unsplash.com/photo-1523206489230-fed4f2b0c2f7?auto=format&fit=crop&w=1200&q=60" alt="Workshop and vehicles" loading="lazy">
+          <img src="cars/Toyota%20Harrier/Main_image.jpeg" alt="United Japan TRD Showroom Vehicles" loading="lazy" onerror="this.src='cars/Subaru%20Forester/Main_image.jpeg'">
+          <div class="about-media-badge">
+            <strong>100%</strong>
+            <span>Japan Inspected</span>
+          </div>
         </div>
         <div class="about-body">
-          <h2 id="about-heading">Who We Are</h2>
-          <p class="lead">We are a Uganda-based JDM specialist focused on delivering inspected and quality Japanese vehicles to local buyers. Our team handles sourcing, inspection, import logistics and preparation.</p>
-          <p>With deep knowledge of the Japanese market and strong inspection standards, we make importation transparent and trustworthy.</p>
+          <span class="section-tag">About United Japan TRD</span>
+          <h2 id="about-heading">Delivering Excellence & Performance Across Uganda</h2>
+          <p class="lead">We are a trusted Kampala-based Japanese vehicle importer and JDM specialist situated at Future Holding Bond Nakawa.</p>
+          <p>With direct connections to top automotive auctions in Japan and rigorous mechanical testing protocols, we guarantee premium quality, authentic paperwork, and transparent transactions for every car imported.</p>
 
           <ul class="stats">
-            <li><strong>Quality Vehicles</strong><span>Inspected & prepared</span></li>
-            <li><strong>JDM Specialists</strong><span>Decades of combined experience</span></li>
-            <li><strong>Uganda Based</strong><span>Local support & delivery</span></li>
-            <li><strong>Customer Focused</strong><span>Personalised service</span></li>
+            <li><strong>Verified Stock</strong><span>Inspected & ready at Nakawa</span></li>
+            <li><strong>JDM Specialists</strong><span>Authentic Japanese spec</span></li>
+            <li><strong>Direct Support</strong><span>Kampala-based assistance</span></li>
+            <li><strong>Full Transparency</strong><span>Genuine condition & auction sheets</span></li>
           </ul>
         </div>
       </div>
@@ -142,68 +220,119 @@
     <section id="contact" class="section contact-section" aria-labelledby="contact-heading">
       <div class="container contact-inner">
         <div class="contact-info">
-          <h2 id="contact-heading">Contact Us</h2>
-          <p class="lead">Have a car in mind or need help sourcing? Get in touch and we’ll assist you.</p>
+          <span class="section-tag">Get in Touch</span>
+          <h2 id="contact-heading">Contact United Japan TRD</h2>
+          <p class="lead">Ready to view a vehicle at Nakawa Bond or need help importing your dream JDM car? Reach out to our team today.</p>
 
-          <ul class="contact-list">
-            <li><strong>Phone:</strong> <!-- COMPANY PHONE --> <span data-company="phones">Loading…</span></li>
-            <li><strong>Email:</strong> <!-- COMPANY EMAIL --> <a data-company="email" href="mailto:unitedjapantraders@gmail.com">unitedjapantraders@gmail.com</a></li>
-            <li><strong>Address:</strong> <!-- COMPANY ADDRESS --> <span data-company="address">Loading…</span></li>
-          </ul>
+          <div class="contact-cards">
+            <div class="contact-card">
+              <div class="contact-icon">📍</div>
+              <div class="contact-details">
+                <strong>Bond Address</strong>
+                <p data-company="address">Future Holding Bond Nakawa, Opposite Nakawa Vocational Training Institute, Kampala, Uganda</p>
+              </div>
+            </div>
+
+            <div class="contact-card">
+              <div class="contact-icon">📞</div>
+              <div class="contact-details">
+                <strong>Direct Phone / WhatsApp</strong>
+                <div class="phones-wrapper" data-company="phones">
+                  <a href="tel:0746838390" class="phone-link">0746-838390 <span class="role-pill">Abdul Rehman</span></a>
+                  <a href="tel:0703605000" class="phone-link">0703-605000 <span class="role-pill">Official 1</span></a>
+                  <a href="tel:0703658999" class="phone-link">0703-658999 <span class="role-pill">Official 2</span></a>
+                </div>
+              </div>
+            </div>
+
+            <div class="contact-card">
+              <div class="contact-icon">✉️</div>
+              <div class="contact-details">
+                <strong>Email Address</strong>
+                <p><a data-company="email" href="mailto:unitedjapantraders@gmail.com" class="email-link">unitedjapantraders@gmail.com</a></p>
+              </div>
+            </div>
+          </div>
         </div>
 
-        <form id="contact-form" class="contact-form" novalidate data-enquiry-email="nehalagct@gmail.com" data-endpoint="">
-          <!-- CONTACT FORM ENDPOINT / EMAIL SERVICE GOES HERE -->
-          <!-- Change data-enquiry-email only to control where form enquiries are sent. Footer email remains in company_info.txt. -->
-          <!-- To connect a backend, configure the POST endpoint in the submit handler in js/script.js -->
-          <!-- Using Formsubmit: you will receive a verification email at the company email once a submission is made. Please open that email and confirm to start receiving messages. -->
-          <input type="hidden" name="_subject" value="Website Enquiry">
+        <form id="contact-form" class="contact-form" novalidate data-enquiry-email="unitedjapantraders@gmail.com" data-endpoint="">
+          <input type="hidden" name="_subject" value="Website Vehicle Enquiry">
           <input type="hidden" name="_template" value="table">
-          <label for="name">Name <span aria-hidden="true">*</span></label>
-          <input id="name" name="name" type="text" required>
+          
+          <h3 class="form-title">Send Us an Enquiry</h3>
+          <p class="form-sub">Fill in your details and we will get back to you promptly with pricing and inspection sheets.</p>
 
-          <label for="phone">Phone <span aria-hidden="true">*</span></label>
-          <input id="phone" name="phone" type="tel" required>
+          <div class="form-group">
+            <label for="name">Full Name <span aria-hidden="true">*</span></label>
+            <input id="name" name="name" type="text" placeholder="e.g. John Mukasa" required>
+          </div>
 
-          <label for="email">Email <span aria-hidden="true">*</span></label>
-          <input id="email" name="email" type="email" required>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="phone">Phone / WhatsApp Number <span aria-hidden="true">*</span></label>
+              <input id="phone" name="phone" type="tel" placeholder="e.g. 0746 838390" required>
+            </div>
+            <div class="form-group">
+              <label for="email">Email Address <span aria-hidden="true">*</span></label>
+              <input id="email" name="email" type="email" placeholder="e.g. name@example.com" required>
+            </div>
+          </div>
 
-          <label for="message">Message</label>
-          <textarea id="message" name="message" rows="5"></textarea>
+          <div class="form-group">
+            <label for="message">Message / Vehicle of Interest</label>
+            <textarea id="message" name="message" rows="4" placeholder="Mention the car you are interested in (e.g. 2018 Mazda CX-5) or your specific sourcing requirements..."></textarea>
+          </div>
 
-          <button type="submit" class="btn btn-primary">Send Enquiry</button>
-          <p class="form-note">We will reply via email or phone. This form requires a backend to send email — see comment above.</p>
+          <button type="submit" class="btn btn-primary btn-block">
+            <span>Submit Enquiry</span>
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="22" y1="2" x2="11" y2="13"></line><polygon points="22 2 15 22 11 13 2 9 22 2"></polygon></svg>
+          </button>
           <div id="form-status" class="form-status" role="status" aria-live="polite" aria-atomic="true" hidden></div>
         </form>
       </div>
     </section>
   </main>
 
+  <!-- FLOATING WHATSAPP BUTTON -->
+  <a href="https://wa.me/256746838390?text=Hello%20United%20Japan%20TRD%2C%20I%20am%20interested%20in%20your%20available%20vehicles" class="floating-whatsapp" target="_blank" rel="noopener noreferrer" aria-label="Chat with us on WhatsApp">
+    <svg width="28" height="28" viewBox="0 0 24 24" fill="currentColor"><path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.711 2.598 2.664-.698c.969.53 2.052.81 3.19.81h.005c3.18 0 5.767-2.587 5.768-5.766.001-3.181-2.586-5.767-5.767-5.767zm7.558 5.765c0 4.17-3.393 7.563-7.563 7.563-1.328 0-2.576-.347-3.666-.954l-4.085 1.07 1.09-3.985c-.694-1.135-1.095-2.469-1.095-3.894 0-4.17 3.393-7.563 7.564-7.563 4.17 0 7.563 3.393 7.563 7.563zm-3.167 3.67c-.201-.1-.703-.347-1.162-.647-.46-.301-.796-.445-.964-.199-.168.246-.647.81-.793.978-.146.168-.291.19-.571.05-.28-.14-1.183-.436-2.253-1.39-.832-.742-1.394-1.658-1.558-1.939-.164-.28-.018-.432.122-.572.127-.126.28-.328.42-.492.14-.164.187-.28.28-.466.094-.187.047-.35-.023-.49-.07-.14-.647-1.558-.887-2.134-.233-.56-.47-.484-.647-.493-.168-.009-.36-.01-.552-.01-.192 0-.503.072-.766.36-.264.288-1.009.986-1.009 2.404 0 1.418 1.033 2.788 1.177 2.98.144.192 2.033 3.104 4.925 4.354.688.297 1.226.474 1.644.607.691.22 1.32.189 1.817.115.554-.083 1.706-.697 1.947-1.369.24-.672.24-1.248.168-1.369-.072-.121-.264-.192-.544-.332z"/></svg>
+    <span class="whatsapp-label">Chat on WhatsApp</span>
+  </a>
+
   <footer class="site-footer">
     <div class="container footer-inner">
       <div class="footer-brand">
-        <!-- COMPANY LOGO GOES HERE -->
-        <div class="logo-placeholder small" aria-hidden="true"></div>
-        <p class="footer-desc">Premium JDM vehicles sourced for Uganda — inspected, imported and prepared.</p>
+        <div class="brand-logo">
+          <span class="logo-badge">JDM</span>
+          <div class="logo-text">
+            <span class="logo-title">UNITED JAPAN</span>
+            <span class="logo-sub">TRD LTD • UGANDA</span>
+          </div>
+        </div>
+        <p class="footer-desc">Premium Japanese imported vehicles delivered directly to drivers in Uganda. Inspected, documented, and prepared with precision.</p>
       </div>
 
       <div class="footer-links">
         <h4>Quick Links</h4>
         <ul>
-          <li><a href="#cars" data-scroll>Cars</a></li>
-          <li><a href="#services" data-scroll>Services</a></li>
+          <li><a href="#home" data-scroll>Home</a></li>
+          <li><a href="#cars" data-scroll>Available Cars</a></li>
+          <li><a href="#services" data-scroll>Our Services</a></li>
           <li><a href="#about" data-scroll>Who We Are</a></li>
+          <li><a href="#contact" data-scroll>Contact Us</a></li>
         </ul>
       </div>
 
       <div class="footer-contact">
-        <h4>Contact</h4>
-        <p><!-- COMPANY PHONE --> <span data-company="phones">Loading…</span></p>
-        <p><!-- COMPANY EMAIL --> <a data-company="email" href="mailto:unitedjapantraders@gmail.com">unitedjapantraders@gmail.com</a></p>
+        <h4>Contact & Location</h4>
+        <p><strong>Bond:</strong> Future Holding Bond Nakawa, Kampala</p>
+        <p><strong>Abdul Rehman:</strong> <a href="tel:0746838390">0746-838390</a></p>
+        <p><strong>Official:</strong> <a href="tel:0703605000">0703-605000</a></p>
+        <p><strong>Email:</strong> <a data-company="email" href="mailto:unitedjapantraders@gmail.com">unitedjapantraders@gmail.com</a></p>
       </div>
     </div>
     <div class="legal">
-      <div class="container">&copy; <span id="year"></span> <!-- COMPANY NAME --> <span data-company="name">United Japan TRD LTD</span>. All rights reserved.</div>
+      <div class="container">&copy; <span id="year"></span> <span data-company="name">United Japan TRD LTD</span>. All rights reserved. Japanese vehicle specialists in Uganda.</div>
     </div>
   </footer>
 

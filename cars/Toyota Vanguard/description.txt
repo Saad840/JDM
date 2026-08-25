@@ -1,0 +1,8 @@
+Name: Toyota Vanguard
+Model: 2012
+Color: Black
+Seating: 8 Seater
+Features:
+Push to start
+Reverse camera
+Electric mirrors

@@ -1,8 +1,9 @@
-Toyota Harrier 
-2017 Model
-White colour 
-Premium package 
+Name: Toyota Harrier
+Model: 2017
+Color: White
+Variant: Premium
+Features:
 Push to start
 Parking sensors
 Electric brake
-Multimedia
+Multimedia system

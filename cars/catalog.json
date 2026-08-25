@@ -1,20 +1,301 @@
 [
   {
-    "name": "Toyota Fielder",
-    "folder": "Toyota Fielder",
+    "folder": "Mazda Cx5",
+    "name": "Mazda CX-5",
+    "model": "2018",
+    "color": "Gray",
+    "variant": "",
+    "fuel": "",
+    "transmission": "",
+    "drivetrain": "",
+    "seating": "",
+    "specs": {},
+    "features": [
+      "Push to start",
+      "Power boot",
+      "Electric brake",
+      "Parking sensors",
+      "Multimedia"
+    ],
     "mainImage": "Main_image.jpeg",
-    "descriptionFile": "description.txt"
+    "images": [
+      "Main_image.jpeg",
+      "1.jpeg",
+      "2.jpeg",
+      "3.jpeg",
+      "4.jpeg",
+      "5.jpeg",
+      "6.jpeg",
+      "7.jpeg",
+      "8.jpeg"
+    ],
+    "descriptionRaw": "Name: Mazda CX-5\r\nModel: 2018\r\nColor: Gray\r\nFeatures:\r\nPush to start\r\nPower boot\r\nElectric brake\r\nParking sensors\r\nMultimedia"
   },
   {
-    "name": "Toyota Harrier",
+    "folder": "Subaru Forester",
+    "name": "Subaru Forester",
+    "model": "2014",
+    "color": "Silver",
+    "variant": "X Break",
+    "fuel": "",
+    "transmission": "",
+    "drivetrain": "",
+    "seating": "",
+    "specs": {},
+    "features": [
+      "Sports rims",
+      "Push to start",
+      "Electric mirrors",
+      "Heated seats"
+    ],
+    "mainImage": "Main_image.jpeg",
+    "images": [
+      "Main_image.jpeg",
+      "1.jpeg",
+      "2.jpeg",
+      "3.jpeg",
+      "4.jpeg",
+      "5.jpeg",
+      "6.jpeg",
+      "7.jpeg",
+      "8.jpeg",
+      "9.jpeg",
+      "10.jpeg",
+      "11.jpeg"
+    ],
+    "descriptionRaw": "Name: Subaru Forester\r\nModel: 2014\r\nColor: Silver\r\nVariant: X Break\r\nFeatures:\r\nSports rims\r\nPush to start\r\nElectric mirrors\r\nHeated seats"
+  },
+  {
+    "folder": "Toyota Alphard",
+    "name": "Toyota Alphard",
+    "model": "2012",
+    "color": "White",
+    "variant": "",
+    "fuel": "",
+    "transmission": "",
+    "drivetrain": "",
+    "seating": "",
+    "specs": {},
+    "features": [
+      "Push to start",
+      "Sport rims",
+      "Premium interior",
+      "Reverse camera",
+      "Electric mirrors"
+    ],
+    "mainImage": "Main_image.jpeg",
+    "images": [
+      "Main_image.jpeg",
+      "1.jpeg",
+      "2.jpeg",
+      "3.jpeg",
+      "4.jpeg",
+      "5.jpeg",
+      "6.jpeg",
+      "7.jpeg"
+    ],
+    "descriptionRaw": "Name: Toyota Alphard\r\nModel: 2012\r\nColor: White\r\nFeatures:\r\nPush to start\r\nSport rims\r\nPremium interior\r\nReverse camera\r\nElectric mirrors"
+  },
+  {
+    "folder": "Toyota Fielder",
+    "name": "Toyota Fielder",
+    "model": "2013",
+    "color": "Black",
+    "variant": "WXB",
+    "fuel": "",
+    "transmission": "",
+    "drivetrain": "",
+    "seating": "",
+    "specs": {},
+    "features": [
+      "Sport lights",
+      "Electric mirrors"
+    ],
+    "mainImage": "Main_image.jpeg",
+    "images": [
+      "Main_image.jpeg",
+      "1.jpeg",
+      "2.jpeg",
+      "3.jpeg",
+      "4.jpeg",
+      "5.jpeg",
+      "6.jpeg",
+      "7.jpeg",
+      "8.jpeg",
+      "9.jpeg"
+    ],
+    "descriptionRaw": "Name: Toyota Fielder\r\nModel: 2013\r\nColor: Black\r\nVariant: WXB\r\nFeatures:\r\nSport lights\r\nElectric mirrors"
+  },
+  {
     "folder": "Toyota Harrier",
-    "mainImage": "WhatsApp Image 2026-08-18 at 8.57.42 PM.jpeg",
-    "descriptionFile": "description.txt"
+    "name": "Toyota Harrier",
+    "model": "2017",
+    "color": "White",
+    "variant": "Premium",
+    "fuel": "",
+    "transmission": "",
+    "drivetrain": "",
+    "seating": "",
+    "specs": {},
+    "features": [
+      "Push to start",
+      "Parking sensors",
+      "Electric brake",
+      "Multimedia system"
+    ],
+    "mainImage": "Main_image.jpeg",
+    "images": [
+      "Main_image.jpeg",
+      "1.jpeg",
+      "2.jpeg",
+      "3.jpeg",
+      "4.jpeg",
+      "5.jpeg",
+      "6.jpeg"
+    ],
+    "descriptionRaw": "Name: Toyota Harrier\r\nModel: 2017\r\nColor: White\r\nVariant: Premium\r\nFeatures:\r\nPush to start\r\nParking sensors\r\nElectric brake\r\nMultimedia system"
   },
   {
-    "name": "Toyota Land cruiser Prado",
     "folder": "Toyota Land cruiser Prado",
-    "mainImage": "WhatsApp Image 2026-08-18 at 8.56.23 PM.jpeg",
-    "descriptionFile": "description.txt"
+    "name": "Toyota Land Cruiser Prado",
+    "model": "2017",
+    "color": "Black",
+    "variant": "",
+    "fuel": "Petrol",
+    "transmission": "Automatic",
+    "drivetrain": "",
+    "seating": "",
+    "specs": {},
+    "features": [
+      "Push to start"
+    ],
+    "mainImage": "Main_image.jpeg",
+    "images": [
+      "Main_image.jpeg",
+      "1.jpeg",
+      "2.jpeg",
+      "3.jpeg",
+      "4.jpeg",
+      "5.jpeg",
+      "6.jpeg"
+    ],
+    "descriptionRaw": "Name: Toyota Land Cruiser Prado\r\nModel: 2017\r\nColor: Black\r\nFuel: Petrol\r\nTransmission: Automatic\r\nFeatures:\r\nPush to start"
+  },
+  {
+    "folder": "Toyota Noah",
+    "name": "Toyota Noah",
+    "model": "2017",
+    "color": "White",
+    "variant": "",
+    "fuel": "",
+    "transmission": "",
+    "drivetrain": "",
+    "seating": "",
+    "specs": {},
+    "features": [
+      "Push to start",
+      "Sports rims",
+      "Auto door",
+      "Electric mirrors",
+      "Multimedia steering"
+    ],
+    "mainImage": "Main_image.jpeg",
+    "images": [
+      "Main_image.jpeg",
+      "1.jpeg",
+      "2.jpeg",
+      "3.jpeg",
+      "4.jpeg",
+      "5.jpeg",
+      "6.jpeg",
+      "7.jpeg",
+      "8.jpeg",
+      "9.jpeg",
+      "10.jpeg",
+      "11.jpeg"
+    ],
+    "descriptionRaw": "Name: Toyota Noah\r\nModel: 2017\r\nColor: White\r\nFeatures:\r\nPush to start\r\nSports rims\r\nAuto door\r\nElectric mirrors\r\nMultimedia steering"
+  },
+  {
+    "folder": "Toyota Passo",
+    "name": "Toyota Passo",
+    "model": "2013",
+    "color": "White",
+    "variant": "",
+    "fuel": "",
+    "transmission": "",
+    "drivetrain": "",
+    "seating": "",
+    "specs": {},
+    "features": [
+      "Sofa seats",
+      "Reverse camera",
+      "Electric mirrors"
+    ],
+    "mainImage": "Main_image.jpeg",
+    "images": [
+      "Main_image.jpeg",
+      "1.jpeg",
+      "2.jpeg",
+      "3.jpeg",
+      "4.jpeg"
+    ],
+    "descriptionRaw": "Name: Toyota Passo\r\nModel: 2013\r\nColor: White\r\nFeatures:\r\nSofa seats\r\nReverse camera\r\nElectric mirrors"
+  },
+  {
+    "folder": "Toyota Premio",
+    "name": "Toyota Premio",
+    "model": "2011",
+    "color": "White",
+    "variant": "",
+    "fuel": "",
+    "transmission": "",
+    "drivetrain": "4WD",
+    "seating": "",
+    "specs": {},
+    "features": [
+      "Push to start",
+      "Electric mirrors"
+    ],
+    "mainImage": "Main_image.jpeg",
+    "images": [
+      "Main_image.jpeg",
+      "1.jpeg",
+      "2.jpeg",
+      "3.jpeg",
+      "4.jpeg",
+      "5.jpeg",
+      "6.jpeg",
+      "7.jpeg"
+    ],
+    "descriptionRaw": "Name: Toyota Premio\r\nModel: 2011\r\nColor: White\r\nDrivetrain: 4WD\r\nFeatures:\r\nPush to start\r\nElectric mirrors"
+  },
+  {
+    "folder": "Toyota Vanguard",
+    "name": "Toyota Vanguard",
+    "model": "2012",
+    "color": "Black",
+    "variant": "",
+    "fuel": "",
+    "transmission": "",
+    "drivetrain": "",
+    "seating": "8 Seater",
+    "specs": {},
+    "features": [
+      "Push to start",
+      "Reverse camera",
+      "Electric mirrors"
+    ],
+    "mainImage": "Main_image.jpeg",
+    "images": [
+      "Main_image.jpeg",
+      "1.jpeg",
+      "2.jpeg",
+      "3.jpeg",
+      "4.jpeg",
+      "5.jpeg",
+      "6.jpeg"
+    ],
+    "descriptionRaw": "Name: Toyota Vanguard\r\nModel: 2012\r\nColor: Black\r\nSeating: 8 Seater\r\nFeatures:\r\nPush to start\r\nReverse camera\r\nElectric mirrors"
   }
 ]

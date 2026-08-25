@@ -1,6 +1,7 @@
-Toyota Land cruiser Prado
-2017 Model
-Black colour 
-Petrol
-Automatic transmission 
+Name: Toyota Land Cruiser Prado
+Model: 2017
+Color: Black
+Fuel: Petrol
+Transmission: Automatic
+Features:
 Push to start
